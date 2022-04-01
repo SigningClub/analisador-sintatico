@@ -1,0 +1,5 @@
+PROGRAM xd;
+VAR jp : STRING;
+BEGIN
+jp := 11 + 3 * 5 \ 21331;
+END.

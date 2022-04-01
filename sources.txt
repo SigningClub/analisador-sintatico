@@ -1,0 +1,7 @@
+./Main.java
+./lexico/Token.java
+./lexico/Scanner.java
+./antlr4Grammar/.antlr/CommonLexerRules.java
+./antlr4Grammar/.antlr/LabeledExprParser.java
+./antlr4Grammar/.antlr/LabeledExprLexer.java
+./antlr4Grammar/.antlr/Lexer.java
