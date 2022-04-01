@@ -1,5 +1,5 @@
-PROGRAM xd;
-VAR jp : STRING;
+PROGRAM teste;
+VAR euSouFoda : INTEGER;
 BEGIN
-jp := 11 + 3 * 5 \ 21331;
+euSouFoda := 4+5;
 END.
