@@ -20,11 +20,11 @@ public class main {
         if(args.length > 0)
             inputFile = args[0];
 
-        InputStream is = System.in;
+        InputStream inputS = System.in;
         
         if(inputFile != null)
         {
-            is = new FileInputStream(inputFile);
+            inputS = new FileInputStream(inputFile);
         }
         
         CharStream input = CharStreams.fromFileName("input.in");
@@ -33,7 +33,7 @@ public class main {
         ExprParser parser = new ExprParser(tokens);
 
         ParseTree tree = parser.prog();
-        is.close();
+        inputS.close();
         
 
 
