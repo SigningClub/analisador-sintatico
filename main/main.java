@@ -1,14 +1,15 @@
-import java.io.FileInputStream;
-import java.io.InputStream;
+package main;
 
+import java.io.FileInputStream;
+
+import java.io.InputStream;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 
-import antlr4Grammar.LabeledExprLexer;
-import antlr4Grammar.LabeledExprParser;
-
+import antlr.ExprLexer;
+import antlr.ExprParser;
 
 public class main {
     public static void main(String[] args) throws Exception {
@@ -27,9 +28,9 @@ public class main {
         }
         
         CharStream input = CharStreams.fromFileName("input.in");
-        LabeledExprLexer lexer = new LabeledExprLexer(input);
+        ExprLexer lexer = new ExprLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
-        LabeledExprParser parser = new LabeledExprParser(tokens);
+        ExprParser parser = new ExprParser(tokens);
 
         ParseTree tree = parser.prog();
         is.close();
