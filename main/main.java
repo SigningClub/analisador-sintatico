@@ -13,7 +13,7 @@ import antlr.ExprParser;
 
 public class main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Começar");
+
 
         String inputFile = null;
 
@@ -35,8 +35,6 @@ public class main {
         ParseTree tree = parser.prog();
         is.close();
         
-
-        System.out.println("Terminar");
 
 
     }

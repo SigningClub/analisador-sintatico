@@ -1,5 +1,5 @@
 PROGRAM teste;
-VAR euSouFoda : INTEGER;
+VAR nimuendaLindo : INTEGER;
 BEGIN
-euSouFoda := 4+5;
+nimuendaLindo := 4+5;
 END.
